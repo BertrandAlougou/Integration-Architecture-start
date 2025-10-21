@@ -44,4 +44,11 @@ public class SalesMan {
         document.append("sid" , this.sid);
         return document;
     }
+
+    public String toString(){
+        return "firstname: " + this.firstname + "\n" +
+                "lastname: " + this.lastname + "\n" +
+                "sid: " + this.sid + "\n";
+    }
+
 }
