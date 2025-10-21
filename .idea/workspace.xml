@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82a83449-4d3a-4cac-96e2-2b3e8df3dc76" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/hbrs/ia/code/ManagePersonalImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/hbrs/ia/model/SocialPerformanceRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hbrs/ia/code/ManagePersonal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hbrs/ia/code/ManagePersonal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hbrs/ia/model/SalesMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hbrs/ia/model/SalesMan.java" afterDir="false" />
+    <list default="true" id="82a83449-4d3a-4cac-96e2-2b3e8df3dc76" name="Changes" comment="initial changes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,11 +144,49 @@
       <updated>1761045022463</updated>
       <workItem from="1761045023703" duration="136000" />
       <workItem from="1761045171543" duration="1883000" />
-      <workItem from="1761047085718" duration="3279000" />
+      <workItem from="1761047085718" duration="3914000" />
     </task>
+    <task id="LOCAL-00001" summary="initial changes">
+      <option name="closed" value="true" />
+      <created>1761050592182</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1761050592182</updated>
+    </task>
+    <task id="LOCAL-00002" summary="initial changes">
+      <option name="closed" value="true" />
+      <created>1761050639330</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1761050639330</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial changes" />
   </component>
 </project>
