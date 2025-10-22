@@ -88,6 +88,9 @@ public class SocialPerformanceRecord {
         this.year = year;
     }
 
+    /**
+     * Converts SocialPerformanceRecord to Document (instance method)
+     */
     public Document toDocument() {
         org.bson.Document document = new Document();
         document.append("leadership", this.leadership);
@@ -98,6 +101,22 @@ public class SocialPerformanceRecord {
         document.append("integrity", this.integrity);
         document.append("year", this.year);
         return document;
+    }
+
+    /**
+     * Converts Document to SocialPerformanceRecord object (static factory method)
+     */
+    public static SocialPerformanceRecord fromDocument(Document doc) {
+        return new SocialPerformanceRecord(
+                doc.getInteger("salesmanId"),
+                doc.getInteger("leadership"),
+                doc.getInteger("openness"),
+                doc.getInteger("behaviour"),
+                doc.getInteger("attitude"),
+                doc.getInteger("communication"),
+                doc.getInteger("integrity"),
+                doc.getInteger("year")
+        );
     }
 
     public String toString(){

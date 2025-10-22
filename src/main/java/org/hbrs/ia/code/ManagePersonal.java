@@ -17,9 +17,12 @@ public interface ManagePersonal {
     public SalesMan readSalesMan( int sid );
     public List<SalesMan> readAllSalesMen();
     public List<SocialPerformanceRecord> readSocialPerformanceRecord( SalesMan salesMan );
-    public SocialPerformanceRecord readLastSocialPerformanceRecord(SalesMan salesMan);
+
+    //social performance record for a specific year
+    List<SocialPerformanceRecord> readByYearSocialPerformanceRecord(SalesMan salesMan, Integer year);
+
     // Remark: How do you integrate the year?
-    public SocialPerformanceRecord readByYearSocialPerformanceRecord(SalesMan salesMan, int year);
+    public SocialPerformanceRecord readLastSocialPerformanceRecord(SalesMan salesMan);
     /** Update **/
     public void updateSalesMan(SalesMan record);
     public void addSocialPerformanceRecord(SocialPerformanceRecord record , SalesMan salesMan );
@@ -27,6 +30,6 @@ public interface ManagePersonal {
     /** Delete **/
     public void deleteSalesMan(int sid);
     public void deleteAllSalesMan();
-
-
+    public void deleteByYearSocialPerformanceRecord(SalesMan salesMan, int year);
+    public void deleteLastSocialPerformanceRecord(SalesMan salesMan);
 }
