@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82a83449-4d3a-4cac-96e2-2b3e8df3dc76" name="Changes" comment="initial changes">
+    <list default="true" id="82a83449-4d3a-4cac-96e2-2b3e8df3dc76" name="Changes" comment="code refactored">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/hbrs/mongodb/demo/QuickDBPopulator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hbrs/ia/code/ManagePersonal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hbrs/ia/code/ManagePersonal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/hbrs/ia/code/ManagePersonalImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hbrs/ia/code/ManagePersonalImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hbrs/ia/model/SalesMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hbrs/ia/model/SalesMan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hbrs/ia/model/SocialPerformanceRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hbrs/ia/model/SocialPerformanceRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/iar/demo/DocumentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/iar/demo/DocumentManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/hbrs/mongodb/test/HighPerformanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/hbrs/mongodb/test/HighPerformanceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/hbrs/ia/code/ManagePersonalImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/hbrs/ia/code/ManagePersonalImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/iar/demo/DocumentManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/iar/demo/DocumentManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/hbrs/mongodb/test/HighPerformanceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/hbrs/mongodb/test/HighPerformanceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,46 +49,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.AtlasConnectionTest.testAtlasConnection.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.HighPerformanceTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.HighPerformanceTest.insertSalesMan.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.InMemoryTest.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;OverrideImplement.generate.javadoc&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jean.alougou/IdeaProjects/mongodbstart&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.QuickDBPopulator.executor": "Run",
+    "JUnit.AtlasConnectionTest.testAtlasConnection.executor": "Run",
+    "JUnit.HighPerformanceTest.addMultiplePerformanceRecords_shouldAllBeStoredInArray.executor": "Run",
+    "JUnit.HighPerformanceTest.addPerformanceRecord_shouldCreatePerformanceRecordsArray.executor": "Run",
+    "JUnit.HighPerformanceTest.executor": "Run",
+    "JUnit.HighPerformanceTest.insertSalesMan.executor": "Run",
+    "JUnit.InMemoryTest.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "OverrideImplement.generate.javadoc": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/jean.alougou/IdeaProjects/mongodbstart",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.HighPerformanceTest">
-    <configuration name="AtlasConnectionTest.testAtlasConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+}]]></component>
+  <component name="RunManager" selected="Application.QuickDBPopulator">
+    <configuration name="QuickDBPopulator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.hbrs.mongodb.demo.QuickDBPopulator" />
       <module name="MongoDBStart" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.hbrs.mongodb.test.*" />
+          <option name="PATTERN" value="org.hbrs.mongodb.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.hbrs.mongodb.test" />
-      <option name="MAIN_CLASS_NAME" value="org.hbrs.mongodb.test.AtlasConnectionTest" />
-      <option name="METHOD_NAME" value="testAtlasConnection" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -107,6 +108,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HighPerformanceTest.addMultiplePerformanceRecords_shouldAllBeStoredInArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MongoDBStart" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.hbrs.mongodb.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.hbrs.mongodb.test" />
+      <option name="MAIN_CLASS_NAME" value="org.hbrs.mongodb.test.HighPerformanceTest" />
+      <option name="METHOD_NAME" value="addMultiplePerformanceRecords_shouldAllBeStoredInArray" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HighPerformanceTest.addPerformanceRecord_shouldCreatePerformanceRecordsArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MongoDBStart" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.hbrs.mongodb.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.hbrs.mongodb.test" />
+      <option name="MAIN_CLASS_NAME" value="org.hbrs.mongodb.test.HighPerformanceTest" />
+      <option name="METHOD_NAME" value="addPerformanceRecord_shouldCreatePerformanceRecordsArray" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HighPerformanceTest.insertSalesMan" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MongoDBStart" />
       <extension name="coverage">
@@ -119,21 +152,6 @@
       <option name="MAIN_CLASS_NAME" value="org.hbrs.mongodb.test.HighPerformanceTest" />
       <option name="METHOD_NAME" value="insertSalesMan" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InMemoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MongoDBStart" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.hbrs.mongodb.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.hbrs.mongodb.test" />
-      <option name="MAIN_CLASS_NAME" value="org.hbrs.mongodb.test.InMemoryTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -201,10 +219,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.QuickDBPopulator" />
         <item itemvalue="JUnit.HighPerformanceTest" />
+        <item itemvalue="JUnit.HighPerformanceTest.addMultiplePerformanceRecords_shouldAllBeStoredInArray" />
+        <item itemvalue="JUnit.HighPerformanceTest.addPerformanceRecord_shouldCreatePerformanceRecordsArray" />
         <item itemvalue="JUnit.HighPerformanceTest.insertSalesMan" />
-        <item itemvalue="JUnit.InMemoryTest" />
-        <item itemvalue="JUnit.AtlasConnectionTest.testAtlasConnection" />
       </list>
     </recent_temporary>
   </component>
@@ -226,7 +245,7 @@
       <workItem from="1761045023703" duration="136000" />
       <workItem from="1761045171543" duration="1883000" />
       <workItem from="1761047085718" duration="14486000" />
-      <workItem from="1761128752778" duration="6219000" />
+      <workItem from="1761128752778" duration="11288000" />
     </task>
     <task id="LOCAL-00001" summary="initial changes">
       <option name="closed" value="true" />
@@ -252,7 +271,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761051147395</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="code refactored">
+      <option name="closed" value="true" />
+      <created>1761142060219</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1761142060219</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,6 +304,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial changes" />
+    <MESSAGE value="code refactored" />
+    <option name="LAST_COMMIT_MESSAGE" value="code refactored" />
   </component>
 </project>

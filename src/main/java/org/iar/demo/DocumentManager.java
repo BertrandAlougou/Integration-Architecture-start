@@ -12,7 +12,7 @@ import org.iar.demo.internal.Document;
 public class DocumentManager {
 	
 	public void checkAndSaveDocument( Document data ) {
-		if ( checkDocument ( data ) == true ) {
+		if (checkDocument(data)) {
 			this.saveDocument(data);
 		}
 	}

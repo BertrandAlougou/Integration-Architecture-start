@@ -23,7 +23,7 @@ public class ManagePersonalImpl implements ManagePersonal{
     public ManagePersonalImpl(){
         this.mongoClient = MongoClients.create("mongodb://localhost:27017");
         this.mongoDatabase = mongoClient.getDatabase("HighPerformanceDatabase");
-        this.salesmenCollection = this.mongoDatabase.getCollection("salesman");
+        this.salesmenCollection = this.mongoDatabase.getCollection("salesmen");
         this.socialperformanceCollection = this.mongoDatabase.getCollection("performanceRecords");
     }
 
@@ -52,9 +52,14 @@ public class ManagePersonalImpl implements ManagePersonal{
     public void addSocialPerformanceRecord(SocialPerformanceRecord record, SalesMan salesMan) {
         int sid = salesMan.getId();
 
-        Document socialPerformanceRecord = record.toDocument();
-        socialperformanceCollection.updateOne(new Document("sid",sid), Updates.push
-                ("PerformanceRecords",socialPerformanceRecord));
+        // Update the SALESMAN document, not the performance collection
+        Document filter = new Document("sid", sid);
+        Document update = new Document("$push",
+                new Document("performanceRecords", record.toDocument())  // Note: lowercase 'p'
+        );
+
+        salesmenCollection.updateOne(filter, update);
+        System.out.println("✅ Added performance record to salesman ID: " + sid);
     }
 
     // read a SalesMan by sid
@@ -247,6 +252,22 @@ public class ManagePersonalImpl implements ManagePersonal{
             System.err.println("❌ Error deleting last performance record for salesman " + salesmanId +
                     ": " + e.getMessage());
             throw new RuntimeException("Failed to delete last performance record", e);
+        }
+    }
+
+    public void debugCollections() {
+        System.out.println("🔍 DEBUG COLLECTIONS:");
+
+        // Check salesmen collection
+        System.out.println("Salesmen collection documents:");
+        for (Document doc : salesmenCollection.find()) {
+            System.out.println(" - " + doc.toJson());
+        }
+
+        // Check performance collection
+        System.out.println("Performance collection documents:");
+        for (Document doc : socialperformanceCollection.find()) {
+            System.out.println(" - " + doc.toJson());
         }
     }
 
